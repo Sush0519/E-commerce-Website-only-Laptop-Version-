@@ -1,0 +1,169 @@
+.topSection {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #dacad1;
+    justify-content: center;
+
+}
+
+
+/* .topSection .logo-top img{
+    position: absolute;
+    left: 5%;
+    top: 2.5px;
+    height: 55px;
+    width: 200px;
+    border-radius: 12px;
+
+} */
+
+.discount {
+    position: absolute;
+    top: 1px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: rgb(116, 69, 49);
+
+}
+
+.dis {
+    position: absolute;
+    left: 24%;
+}
+
+.cartSection {
+    position: absolute;
+    display: flex;
+    top: 15px;
+    right: 18px;
+    height: 35px;
+    width: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.cartSection span{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 28px;
+    align-items: center;
+    background-color: rgb(240, 232, 232);
+    height: 28px;
+    border-radius: 50%;
+    top: 53%;
+    right: -15px;
+    color: black;
+}
+
+.cart:hover{
+    transform: scale(1.1);
+
+}
+
+.loginSection {
+    position: absolute;
+    display: flex;
+    right: 70px;
+    height: 32px;
+    width: 32px;
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    display: flex;
+    color: transparent;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    /* border: 1px solid green; */
+    border-radius: 50%;
+    height: 100%;
+}
+
+.login:hover{
+    transform: scale(1.1);
+}
+
+.wishlistSection {
+    position: absolute;
+    display: flex;
+    right: 120px;
+    height: 30px;
+    width: 30px;
+    
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: center;
+}
+
+.wishlist {
+    display: flex;
+    color: transparent;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+
+    /* border: 1px solid green; */
+    height: 100%;
+}
+
+.wishlist:hover{
+    transform: scale(1.1);
+
+}
+
+.searchSection {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 165px;
+    height: 50px;
+    width: 30%;
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBox {
+    display: flex;
+    /* display: none; */
+    background-color: transparent;
+    align-self: center;
+    position: absolute;
+    justify-content: center;
+    top: 4.5px;
+    right: 5px;
+    width: 10%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 1.2rem;
+    color: black;
+    text-align: center;
+    height: 85%;
+}
+
+.searchIcon {
+    
+    position: absolute;
+    display: flex;
+    top: 10px;
+    right: 5px;
+    width: 32px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    height: 32px;
+}
+

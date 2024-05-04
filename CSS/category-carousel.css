@@ -1,0 +1,264 @@
+.bs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carousel{
+    position: relative;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    /* border: 1px solid rgb(42, 11, 245); */
+    width: 100%;
+    height: 80%;
+
+}
+
+ .carousel .line{
+    position: relative;
+    bottom: 218px;
+    width: 100%; 
+    height: 10px;
+    background-color: rgb(149, 109, 123);
+   
+}
+
+ .move-line {
+    border-radius: 10px;
+
+     background-color: white;
+}
+
+
+.bs-outerbox{
+    position: absolute;
+    top: 88px;
+    /* border: 1px solid yellow; */
+    width: 100%;
+    height: 85%;
+    display: flex;
+    /* align-items: center; */
+
+    justify-content:space-evenly;
+}
+.bs-container{
+    top:35px;
+    height: 300px;
+    width: 240px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgb(136, 134, 134);
+}
+
+.bs-image img{
+    height: 300px;
+    width: 240px;
+  transition: opacity 0.5s;
+
+
+}
+
+/* ******* QUICK VIEW BTN ********* */
+
+     .btn{
+    position: absolute;
+    bottom:47%;
+    height: 40px;
+    width: 100px;
+    left: 30%;
+    color: black;
+    border: 2px solid black;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+   transition: opacity 0.5s;
+
+
+}
+
+.bs-container:hover .i{
+   opacity: 0.7;
+}
+
+.bs-container:hover .btn{
+    display: block;
+    opacity: 1;
+    animation: move 0.3s;
+
+}
+
+.btn:hover{
+    opacity: 0;
+    color: white;
+    border: none;
+    /* background-color: rgb(157, 125, 173); */
+    background-color: rgb(132, 158, 163);
+}
+
+@keyframes move{
+    0%{
+       bottom: 36px;
+    }
+
+    100%{
+        bottom: 47%;
+    }
+}
+
+
+
+.w-back{
+    display: none;
+}
+.bs-container:hover .w-back{
+    display: block;
+}
+
+.bs-container:hover .w-front{
+    display: none;
+}
+
+.m-back{
+    display: none;
+} 
+.bs-container:hover .m-back{
+    display: block;
+    
+} 
+
+
+
+.bs-container:hover .m-front{
+    display: none;
+} 
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.heading-text{
+    
+    font-size: 2.9rem;
+    color: rgb(194, 135, 160);
+    top: 0px;
+    text-shadow: 1px 2px white, -2px -1px black;
+    padding-top: 0px;
+    margin-top: -70px;
+}
+
+.category-swap{
+    font-weight: 700;
+    font-size: 1.9rem;
+    position: absolute;
+    top: 5px;
+    margin: 10px;
+}
+
+.category-swap a{
+    text-shadow: 1px 1px #332e2e ;
+    color:#98b5ba;
+   
+}
+
+/* **********PRODUCT info********** */
+
+.pInfo-box{
+    position: absolute;
+    /* border: 1px solid black; */
+    bottom: -12px;
+    width: 100%;
+    height: 32%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    /* flex-direction: column; */
+
+
+}
+
+.bs-text{
+    position: relative;
+    /* border: 1px solid black; */
+    width: 18%;
+    /* background-color: #e2dede; */
+    align-items: center;
+    justify-content:center;
+    padding: 0px 17px;    
+    
+    
+} 
+
+ .bs-cat{
+    display:flex;
+    justify-content: flex-start; 
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+.bs-cat span{
+    color: #9a7e72;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 5px 0px;
+
+}
+
+.bs-title{
+    color: #332e2e;
+    font-weight: 600;
+    font-size:1rem;
+    text-decoration: none;
+    transition: all ease 0.3s;
+
+}
+
+
+.bs-title:hover{
+    color: #9c6c8c;
+    opacity: 0.7;
+    transition: all ease 0.3s;
+}
+
+.bs-price-details{
+    margin-top: 8px;
+
+}
+
+.bs-price-details .bs-p-price{
+    font-size: 1.3rem;
+    color:#333333 ;
+    font-weight: 600;
+}
+
+.cart-btn{
+    background-color: rgb(132, 158, 163);
+    /* border: 1px solid grey; */
+    border: none;
+    padding: 2px;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left:27px ;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    
+}
+
+.cart-btn:hover{
+    background-color: rgb(101, 136, 143);
+  border: 1px solid black;
+}

@@ -1,0 +1,241 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     margin: 0;
+     padding: 0;
+     display: flex;
+ }
+
+
+ a {
+     text-decoration: none;
+ }
+
+ html,
+ body {
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+     width: 100%;
+ }
+
+ .container {
+     display: grid;
+     grid-template-areas:
+         'sidebar   topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar'
+         'sidebar   main main main main main main main main main main main main main main main main main';
+
+ }
+
+
+
+ #box1 {
+
+     height: 580px;
+     background-color: rgb(241, 201, 201);
+     background: url('Images/bg2.jpg') no-repeat center center/cover;
+ }
+
+
+ #box2 {
+     height: 650px;
+     background-color: white;
+     display: flex;
+
+
+ }
+
+
+ #box3 {
+     display: flex;
+     height: 700px;
+     /* background-color:rgb(220, 208, 230); */
+     background-color: #dacad1;
+
+ }
+
+ #box4 {
+     transition: margin-left width 0.3s ease;
+     flex: 1;
+     width: 93.3vw;
+     transition: all 0.3s ease;
+     background-color: rgb(231, 241, 234);
+
+
+     display: grid;
+     height: 398px;
+
+
+
+
+     grid-template-areas: 'web-about web-about  info info  account account email email email '
+         'foot foot foot foot foot foot foot foot foot  ';
+
+
+ }
+
+ body.expanded #box4 {
+     margin-left: 0px;
+     width: 83.3vw;
+     transition: all 0.3s ease;
+
+ }
+
+ #web-about {
+     transition: all 0.3s ease;
+
+     grid-area: web-about;
+     transition: margin-left width 0.3s ease;
+     flex: 1;
+     width: 34.2vi;
+     height: 339.5px;
+ }
+
+ body.expanded #web-about {
+     transition: all 0.3s ease;
+
+     display: flex;
+     margin-left: 0px;
+     width: 500px;
+ }
+
+ body.expanded #web-about .pay-partners {
+     transition: all 0.3s ease;
+
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+
+     flex-wrap: wrap;
+     margin-left: 0px;
+ }
+
+
+
+ #info {
+     transition: margin-left width 0.3s ease;
+     flex: 1;
+     grid-area: info;
+     width: 16.9vi;
+     transition: all 0.3s ease;
+
+ }
+
+ body.expanded #info {
+     margin-right: 2px;
+     transition: all 0.3s ease;
+     width: 180px;
+ }
+
+ #account {
+     transition: margin-left width 0.3s ease;
+     flex: 1;
+     grid-area: account;
+     width: 16.9vi;
+     transition: all 0.3s ease;
+
+
+ }
+
+ body.expanded #account {
+     margin-left: 0px;
+     transition: all 0.3s ease;
+     width: 205px;
+ }
+
+ #email {
+     transition: margin-left width 0.3s ease;
+     flex: 1;
+     transition: all 0.3s ease;
+
+     grid-area: email;
+     width: 25vi;
+ }
+
+
+ body.expanded #email {
+     margin-left: 0px;
+     width: 392px;
+     transition: all 0.3s ease;
+
+ }
+
+ #foot {
+     transition: margin-left width 0.3s ease;
+     flex: 1;
+     grid-area: foot;
+     width: 93vw;
+     height: 60px;
+ }
+
+ body.expanded #foot {
+     height: 60px;
+     margin-left: 0px;
+     width: 83.3vw;
+     transition: all 0.3s ease;
+
+ }
+
+ .infoSection {
+
+     margin: 0;
+     background-color: rgb(231, 241, 234);
+     padding: 0;
+
+ }
+
+
+ #topbar {
+     transition: margin-left width 0.3s ease;
+     flex: 1;
+     grid-area: topbar;
+     width: 93.3vw;
+     height: 60px;
+     transition: all 0.3s ease;
+
+
+ }
+
+ body.expanded #topbar {
+     transition: all 0.3s ease;
+
+     margin-left: 0px;
+     width: 83.4vw;
+ }
+
+ #sidebar {
+     grid-area: sidebar;
+     height: 255.6vh;
+     width: 89px;
+     transition: width 0.3s ease;
+ }
+
+ body.expanded #sidebar {
+     width: 250px;
+ }
+
+ #main {
+     flex: 1;
+     grid-area: main;
+     height: 329.4vh;
+     width: 93.3vw;
+     transition: margin-left width 0.3s ease;
+     transition: all 0.3s ease;
+ }
+
+ body.expanded #main {
+     margin-left: 0px;
+     width: 83.4vw;
+ }
+
+ .item {
+
+     background-color: rgb(173, 25, 25);
+ }
+
+ 

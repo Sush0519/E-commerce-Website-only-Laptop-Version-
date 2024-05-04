@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .main-box {
+        display: grid;
+        grid-template-areas: 'upper-box upper-box upper-box upper-box'
+            'main-box main-box main-box main-box';
+    }
+
+    .upper-box {
+        grid-area: upper-box;
+        position: absolute;
+        background-color: #dacad1;
+        height: 60px;
+        width: 100vw;
+    }
+
+    .arw {
+        position: absolute;
+        top: 2px;
+        left: -29%;
+
+    }
+
+
+    .upper-box .list-heading {
+        position: absolute;
+        top: 18%;
+        left: 3%;
+        color: rgb(116, 69, 49);
+        font-weight: 700;
+        font-size: 2.2rem;
+
+    }
+
+    .main-box {
+        grid-area: main-box;
+        height: 99.5vh;
+        width: 99.77vw;
+        position: relative;
+    }
+
+    .main-box .wish-image {
+        position: absolute;
+        left: 34%;
+        top: 5%;
+        height: 400px;
+        width: 500px;
+    }
+
+
+    .main-box .quote1 {
+        position: absolute;
+        color: rgb(71, 71, 187);
+        top: 55%;
+        left: 41%;
+        font-size: 1.9rem;
+        font-weight: 600;
+
+    }
+
+    .main-box .quote2 {
+        position: absolute;
+        color: rgb(226, 190, 59);
+        top: 63%;
+        left: 39%;
+        font-size: 1.4rem;
+        font-weight: 600;
+
+    }
+
+    .main-box .quote3 {
+        position: absolute;
+        color: rgb(226, 190, 59);
+        top: 68%;
+        left: 46%;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .shp-btn {
+        position: absolute;
+        top: 79%;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border-radius: 10px;
+        left: 44%;
+        color: white;
+        height: 50px;
+        width: 200px;
+        border: none;
+        background-color: rgb(116, 69, 49);
+    }
+
+    .shp-btn:hover {
+        border: 2px solid black;
+    }
+
+    .home-btn {
+        text-decoration: none;
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="main-box">
+        <img class="wish-image" src="CSS/Images/wishlistImage.png" alt="">
+        <p class="quote1">Your Wishlist is empty!</p>
+        <p class="quote2">seems like you don't have wishes here.</p>
+        <p class="quote3">make a wish!</p>
+        <div class="upper-box">
+            <span class="list-heading">Wishlist
+                <a href="./project-3.html">
+                    <i class="fa-solid fa-arrow-left arw" style="color: #ebeef5;"></i>
+                </a>
+
+            </span>
+        </div>
+        <button class="shp-btn">
+            <a class="home-btn" href="./project-3.html">
+                Start Shopping
+            </a>
+        </button>
+    </div>
+
+
+</body>
+
+</html>

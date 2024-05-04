@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0Figure.com</title>
+    <link rel="stylesheet" href="CSS/Project-3.CSS">
+    <link rel="stylesheet" href="CSS/sidebar.css">
+    <link rel="stylesheet" href="CSS/category-carousel.css">
+    <link rel="stylesheet" href="CSS/category section.css">
+    <link rel="stylesheet" href="CSS/InfoSection.css">
+    <link rel="stylesheet" href="CSS/topbar.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="item topSection" id="topbar">
+
+            <span class="discount">
+                
+                Get Flat 10% Off On All Orders <br>
+                <span class="dis"> Use Code : ZF10 </span>
+            </span>
+
+            <span class="cartSection">
+                <a href="#">
+                    <img onclick="viewCart()" class="cart" src="CSS/Images/cart.png" alt="">
+                </a>
+
+            </span>
+            <span class="loginSection">
+                <a href="#">
+                    <img onclick="viewLogin()" class="login" src="CSS/Images/login.png" alt="">
+                </a>
+            </span>
+            <span class="wishlistSection">
+
+                <a href="#">
+                    <img onclick="viewList()" class="wishlist" src="CSS/Images/wishlist.png" alt="">
+                </a>
+
+            </span>
+            <span class="searchSection">
+                <a href="#">
+                    <input class="searchBox" type="search">
+                    <img class="searchIcon" src="CSS/Images/searchIcon.png" alt="">
+                </a>
+            </span>
+
+        </div>
+        <div class="item sidebar1 close" id="sidebar">
+            <nav class="navbar close">
+
+                <header>
+                    <div class="image-text">
+                        <span class="image">
+                            <img src="CSS/Images/logoInitials.png" alt="logo">
+                        </span>
+
+                        <div class="text header-text">
+                            <span class="name">0Figure</span>
+                            <span class="profession">Clothing Store</span>
+                        </div>
+                    </div>
+                    <i class='bx bx-chevron-right toggle click-btn'></i>
+                </header>
+
+                <div class="menu-bar">
+                    <div class="menu">
+                        <li class="search-box">
+
+                            <i class='bx bx-search icon'></i>
+                            <input type="search" placeholder="Search">
+
+                        </li>
+                        <ul class="menu-links">
+                            <li class="nav-link">
+                                <a href="#">
+                                    <i class='bx bx-home icon'></i>
+                                    <span class="text nav-text">Home</span>
+                                </a>
+
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">
+                                    <i class='bx bx-user icon'></i>
+                                    <span class="text nav-text">Account</span>
+                                </a>
+
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">
+                                    <i class='bx bxs-t-shirt icon'></i>
+                                    <span class="text nav-text">Store</span>
+                                </a>
+
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">
+                                    <i class='bx bx-heart icon'></i>
+                                    <span class="text nav-text">Wishlist</span>
+                                </a>
+
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">
+                                    <i class='bx bxs-package icon'></i>
+                                    <span class="text nav-text">Track Order</span>
+                                </a>
+
+                            </li>
+
+                            <li class="nav-link">
+                                <a href="#">
+                                    <i class='bx bx-envelope icon'></i>
+                                    <span class="text nav-text">Contact Us</span>
+                                </a>
+
+                            </li>
+
+                            <li class="nav-link">
+                                <a href="#">
+                                    <i class='bx bx-log-out icon'></i>
+                                    <span class="text nav-text">Logout</span>
+                                </a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+            </nav>
+
+
+        </div>
+
+
+        <div class="item mainSection" id="main">
+
+            <div class="item" id="box1"></div>
+
+            <!-- -----------------BOX-2-------------------- -->
+            <div class="item cat" id="box2">
+                <div class="category">
+                    <div class="cImage-container">
+                        <div class="c-image">
+                            <a href="#">
+                                <img src="CSS/Images/men.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="c-text">
+                        <span>Men</span>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="cImage-container">
+                        <div class="c-image">
+                            <a href="#">
+                                <img src="CSS/Images/luggage1.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="c-text">
+                        <span>Luggage</span>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="cImage-container">
+                        <div class="c-image">
+                            <a href="#">
+                                <img src="CSS/Images/women.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="c-text">
+                        <span>Women</span>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="cImage-container">
+                        <div class="c-image">
+                            <a href="#">
+                                <img src="CSS/Images/f5.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="c-text">
+                        <span>Footwear</span>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="cImage-container">
+                        <div class="c-image">
+                            <a href="#">
+                                <img src="CSS/Images/kids5.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="c-text">
+                        <span>Kids</span>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="cImage-container">
+                        <div class="c-image">
+                            <a href="#">
+                                <img src="CSS/Images/a1.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="c-text">
+                        <span>Accessories</span>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="cImage-container">
+                        <div class="c-image">
+                            <a href="#">
+                                <img src="CSS/Images/w3.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="c-text">
+                        <span>Watches</span>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="cImage-container">
+                        <div class="c-image">
+                            <a href="#">
+                                <img src="CSS/Images/view.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="c-text c-view">
+                        <span>View All</span>
+                    </div>
+                </div>
+            </div>
+
+            <!---------------- BOX-3 ------------------------>
+
+            <div class="item bs" id="box3">
+                <h1 class="heading-text">Best Sellers</h1>
+                <section class="carousel">
+                    <div class="category-swap"><span class="women "> <a href="#" class="a">WOMEN</a> </span> &nbsp;
+                        &nbsp; &nbsp;
+                        &nbsp; <span class="men "> <a href="#" class="a">MEN</a> </span>
+                    </div>
+
+                    <div id="fixed-line" class="line">
+                        <div id="movable-line" class="move-line "></div>
+                    </div>
+
+                    <div class="bs-outerbox">
+                        <div class="bs-container ">
+                            <div class="bs-image ">
+                                <a href="#">
+                                    <img src="CSS/Images/wfc1.webp" class="w-front" alt="front-side" id="snap-wf-1">
+                                    <img class="i" src="CSS/Images/wbc1.webp" class="w-back" alt="back-side"
+                                        id="snap-wb-1">
+
+
+
+
+
+
+
+                                    <img src="CSS/Images/mfc1.webp" class="m-front" alt="front-side">
+                                    <img class="i" src="CSS/Images/mbc1.webp" class="m-back" alt="back-side">
+                                </a>
+                            </div>
+                            <button class="btn">Quick View</button>
+                        </div>
+                        <div class="bs-container ">
+                            <div class="bs-image ">
+                                <a href="#">
+                                    <img src="CSS/Images/wfc2.webp" class="w-front" alt="front-side" id="snap-wf-2">
+                                    <img class="i" src="CSS/Images/wbc2.webp" class="w-back" alt="back-side"
+                                        id="snap-wb-2">
+
+
+                                    <img src="CSS/Images/mfc2.webp" class="m-front" alt="front-side">
+                                    <img class="i" src="CSS/Images/mbc2.webp" class="m-back" alt="back-side">
+
+
+                                </a>
+                            </div>
+                            <button class="btn">Quick View</button>
+
+                        </div>
+                        <div class="bs-container ">
+                            <div class="bs-image ">
+                                <a href="#">
+                                    <img src="CSS/Images/wfc3.webp" class="w-front" alt="front-side" id="snap-wf-3">
+                                    <img class="i" src="CSS/Images/wbc3.webp" class="w-back" alt="back-side"
+                                        id="snap-wb-3">
+
+
+
+
+
+
+
+                                    <img src="CSS/Images/mfc3.webp" class="m-front" alt="front-side">
+                                    <img class="i" src="CSS/Images/mbc3.webp" class="m-back" alt="back-side">
+
+
+                                </a>
+                            </div>
+                            <button class="btn">Quick View</button>
+                        </div>
+                        <div class="bs-container ">
+                            <div class="bs-image ">
+                                <a href="#">
+                                    <img src="CSS/Images/wfc4.webp" class="w-front" alt="front-side" id="snap-wf-4">
+                                    <img class="i" src="CSS/Images/wbc4.webp" class="w-back" alt="back-side"
+                                        id="snap-wb-4">
+
+
+
+                                    <img src="CSS/Images/mfc4.webp" class="m-front" alt="front-side">
+                                    <img class="i" src="CSS/Images/mbc4.webp" class="m-back" alt="back-side">
+                                </a>
+                            </div>
+                            <button class="btn">Quick View</button>
+
+
+                        </div>
+
+                        <div class="pInfo-box">
+                            <div class="bs-text">
+                                <div class="bs-cat">
+                                    <span id="cat-w-1">Chikankari Kurti</span>
+                                </div>
+                                <a href="#" class="bs-title" id="title-W-1">Chikankari Straight Long Kurti</a>
+                                <div class="bs-price-details">
+                                    <span class="bs-p-price" id="price-w-1">&#8377;799</span>
+                                    <button onclick="CART()" class="cart-btn" id="item1" type="button">Add To
+                                        Cart</button>
+                                </div>
+                            </div>
+
+
+                            <div class="bs-text">
+                                <div class="bs-cat">
+                                    <span id="cat-w-2">Leather Pant</span>
+                                </div>
+
+                                <a href="#" class="bs-title" id="title-W-2">Black high Waist leather trousers</a>
+
+
+                                <div class="bs-price-details">
+                                    <span class="bs-p-price" id="price-w-2">&#8377;1590</span>
+                                    <button onclick="CART()" class="cart-btn" id="item2" type="button">Add To
+                                        Cart</button>
+                                </div>
+
+                            </div>
+
+
+                            <div class="bs-text">
+                                <div class="bs-cat">
+                                    <span id="cat-w-3">Maxi Dress</span>
+                                </div>
+
+                                <a href="#" class="bs-title" id="title-W-3">Blue Tropical Front Placket Ruched Waist
+                                    Maxi Dress</a>
+
+
+                                <div class="bs-price-details">
+                                    <span class="bs-p-price" id="price-w-3">&#8377;1098</span>
+
+                                    <button onclick="CART()" class="cart-btn" id="item3" type="button">Add To
+                                        Cart</button>
+                                </div>
+                            </div>
+
+
+                            <div class="bs-text">
+                                <div class="bs-cat">
+                                    <span id="cat-w-4">Crop Shirt</span>
+
+
+                                </div>
+
+                                <a href="#" class="bs-title" id="title-W-4">All-Over Striped Crop Shirt with Ruched
+                                    Detail</a>
+
+
+                                <div class="bs-price-details">
+                                    <span class="bs-p-price" id="price-w-4">&#8377;699</span>
+
+                                    <button onclick="CART()" class="cart-btn" id="item4" type="button">Add To
+                                        Cart</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="item" id="box4">
+
+
+                <div class="infoSection col1" id="web-about">
+
+                    <span class="main-logo">
+                        <img src="CSS/Images/finalLogo.png" alt="logo">
+                    </span>
+
+                    <span class="quote">
+                        Whoever said money can't buy happiness <br>
+                        simply didn't know where to go shopping. <br>
+                        You know where to go&#128524;.
+                    </span>
+
+                    <div class="pay-partners">
+                        <img class="pay" src="CSS/Images/amazonpay.png" alt="">
+                        <img class="pay" src="CSS/Images/razorpay.jpg" alt="">
+                        <img class="pay" src="CSS/Images/Paytm.jpg" alt="">
+                        <img class="pay" src="CSS/Images/phonepe.png" alt="">
+                        <img class="pay" src="CSS/Images/bhimpay.jpg" alt="">
+                        <img class="pay" src="CSS/Images/gpay.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="infoSection col2" id="info">
+
+                    <span class="info-heading">
+                        INFORMATION
+                    </span>
+
+                    <div class="sub-info-box">
+                        <span class="sub-info">About Us</span>
+                        <span class="sub-info">Contact Us</span>
+                        <span class="sub-info">Services</span>
+                        <span class="sub-info">Shipping Policy</span>
+                        <span class="sub-info">Privacy Policy</span>
+                        <span class="sub-info">Refund Policy</span>
+                        <span class="sub-info">FAQ</span>
+
+                    </div>
+
+                </div>
+                <div class="infoSection col3" id="account">
+
+                    <span class="acc-heading">
+                        ACCOUNT
+                    </span>
+
+                    <div class="sub-acc-box">
+                        <span class="sub-acc">My Account</span>
+                        <span class="sub-acc">View Orders</span>
+                        <span class="sub-acc">Track Order</span>
+                        <span class="sub-acc">Wishlist</span>
+
+
+                    </div>
+
+
+                </div>
+                <div class="infoSection col4" id="email">
+
+
+                    <span class="email-heading">NEWSLETTER </span>
+                    <span class="email-quote">Get updates in your Email about <br> our new arrivals and special
+                        offers</span>
+
+                    <div class="email-outer">
+                        <input type="email" class="email-box" placeholder="Enter your email">
+                        <button class="subs-btn">Subscribe</button>
+                    </div>
+
+                    <div class="icons">
+
+                        <a href="#" class="fa fa-facebook"
+                            style="font-size: 36px; width: 49px;  height: 49px; align-self: center; align-items: center; justify-content:center;display: flex; border-radius: 50%;"></a>
+
+                        <a href="#" class="fa-brands fa-youtube" style="font-size: 48px; width: 50px;  height: 32px; 
+                        align-self:center ;
+                        align-items: center; justify-content:center;display: flex;  "></a>
+
+                        <a href="#" class="fa fa-twitter" style="font-size: 48px; width: 50px;  height: 32px; 
+                        align-self:center ;
+                        align-items: center; justify-content:center;display: flex; "></a>
+
+                        <a href="#" class="fa fa-instagram" style="font-size: 48px; width: 41px;  height: 40px; 
+                        align-self:center ;
+                        align-items: center; justify-content:center;display: flex; border-radius:30% ; "></a>
+
+                        <a href="#" class="fa fa-pinterest" style="font-size: 48px; width: 38px;  height: 40px; 
+                        align-self:center ;
+                        align-items: center; justify-content:center;display: flex; border-radius:50% ;"></a>
+
+                    </div>
+                </div>
+                <footer class="infoSection row" id="foot">
+
+                    <span>Copyright &copy; 2023 0Figure. All Rights Reserved.</span>
+                </footer>
+
+
+
+            </div>
+        </div>
+
+    </body>
+    <script src="Project-3.js"></script>
+
+</html>
